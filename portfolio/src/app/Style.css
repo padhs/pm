@@ -1,0 +1,151 @@
+*{
+}
+
+.navbar{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.emojiIcon{
+    font-size: xx-large;
+    margin: 10px;
+    align-items: flex-start;
+
+}
+
+.menuActionButtons{
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    margin: 10px;
+    align-items: center;
+}
+
+.menuButton{
+    padding: 5px;
+    margin: 10px;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+}
+
+.socialNavBarIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.mailNavBarIconDiv{
+    margin: 10px;
+}
+
+.mailNavBarIcon{
+    width: 40px;
+    height: 40px;
+}
+
+.mainPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5fcff;
+}
+
+.heyIntro{
+    font-size: 40px;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.productTeardown{
+    font-size: 100px;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.subProductTeardown{
+    font-size: 60px;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contactMeButtonMainPage{
+    margin: 20px;
+    padding: 20px;
+}
+
+.contactMeButton{
+
+    font-size: 20px;
+    width: 250px;
+    height: 80px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myWorkSection{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    object-fit: contain;
+}
+
+.uniqueLottieAnimation{
+    padding-bottom: 50px;
+}
+
+.seeMyCodeSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    object-fit: contain;
+}
+
+.animationAndWork{
+    margin: 20px;
+    padding: 20px;
+}
+
+.seeMyCode{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+}
+
+.aboutMeSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    background-color: #f1f7fc;
+    color: black;
+}
+
+.aboutMeHeading{
+    font-size: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+.aboutMeSubInfo{
+    font-size: 60px;
+    margin: 20px;
+    padding: 20px;
+}
+.footer{
+    background-color: #0f1221;
+}
