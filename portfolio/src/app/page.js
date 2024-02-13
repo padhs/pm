@@ -12,6 +12,9 @@ import headerpic from '../../public/Header_pic.jpeg';
 import Button from '@mui/material/Button';
 import React, {useRef} from "react";
 import AboutMe from '../../public/about_me_pic.jpeg';
+import subStackFooter from '../../public/stack.png';
+import gmail from '../../public/gmail.png';
+
 
 export default function Home() {
 
@@ -160,12 +163,65 @@ export default function Home() {
             </div>
         </div>
         <div className='footer'>
-            <div>
-
+            <div className='nameandPM'>
+                <div className='footerName'>
+                    <strong>Arosek Padhi</strong>
+                </div>
+                <div className='productManager'>
+                    Aspiring Product Manager
+                </div>
             </div>
-            <div className='footerMenu'>
-
+            <div className='footerContent'>
+                <div className='talk'>
+                    <strong>
+                        Lets Talk!
+                    </strong>
+                </div>
+                <div className='footerTalkInfo'>
+                    I am always open to connect with people in tech, learn more about product management and discuss navigating this rewarding career path.
+                </div>
+                <div className='footerIconMenu'>
+                    <div className='footerIconForConnecting'>
+                        <a href="https://linkedin.com/in/arosekp">
+                            <Image
+                                className='linkedInIconFooter'
+                                src={linkedin}
+                                alt='linkedin'
+                            />
+                        </a>
+                    </div>
+                    <div className='footerIconForConnecting'>
+                        <a href="https://mailto:arosekpadhi@gmail.com">
+                            <Image
+                                className='linkedInIconFooter'
+                                src={gmail}
+                                alt='linkedin'
+                            />
+                        </a>
+                    </div>
+                    <div className='footerIconForConnecting'>
+                        <a href="https://linkedin.com/in/arosekp">
+                            <Image
+                                className='linkedInIconFooter'
+                                src={subStackFooter}
+                                alt='linkedin'
+                            />
+                        </a>
+                    </div>
+                    <div className='footerIconForConnecting'>
+                        <a href="https://linkedin.com/in/arosekp">
+                            <Image
+                                className='linkedInIconFooter'
+                                src={github}
+                                alt='linkedin'
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div className='love'>
+            Made with ❤️ by Arosek Padhi
         </div>
     </main>
   );
