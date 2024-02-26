@@ -3,17 +3,15 @@
 
 import './Style.css';
 import Image from 'next/image';
-import mailNavBar from '../../public/mailNavBar.png';
-import whatsapp from '../../public/whatsappNavBar.png';
 import linkedin from '../../public/linkedinNarBar.png';
 import github from '../../public/gitNavBar.png';
-import substack from '../../public/subsNavBar.png';
 import headerpic from '../../public/Header_pic.jpeg';
 import Button from '@mui/material/Button';
 import React, {useRef} from "react";
 import AboutMe from '../../public/about_me_pic.jpeg';
 import subStackFooter from '../../public/stack.png';
 import gmail from '../../public/gmail.png';
+import Tooltip from '@mui/material/Tooltip';
 
 
 export default function Home() {
@@ -27,47 +25,63 @@ export default function Home() {
     <main className='mainClass'>
         <div className='navbar'>
             <div className='emojiIcon'>
-                🙋🏻‍♂️
+                <a href="">
+                    🙋🏻‍♂️
+                </a>
             </div>
             <div className='menuActionButtons'>
                 <div className='menuButton'>
-                    Home
+                    <a href="">
+                        <h4>Home</h4>
+                    </a>
                 </div>
                 <div className='menuButton'>
-                    Resume
+                    <a href="https://drive.google.com/file/d/18S0MzC0gF3tIfz_gfostruWMaqgriQI-/view?usp=sharing">
+                        <h4>Resume</h4>
+                    </a>
                 </div>
                 <div className='menuButton'>
-                    Contact
+                    <div className='contactNumber'>
+                        <h4>Contact</h4>
+                        <div className='contactOnHover'>
+                            🇮🇳 9439698531
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='socialNavBarIcons'>
                 <div className='mailNavBarIconDiv'>
-                    <Image src={mailNavBar} alt='mail' className='mailNavBarIcon'/>
+                    <a href="mailto:arosekpadhi@gmail.com?subject=Arosek%2C I want to Connect">
+                        <Image src={gmail} alt='mail' className='mailNavBarIcon'/>
+                    </a>
                 </div>
                 <div className='mailNavBarIconDiv'>
-                    <Image src={whatsapp} alt='mail' className='mailNavBarIcon'/>
+                    <a href="https://linkedin.com/in/arosekp">
+                        <Image src={linkedin} alt='mail' className='mailNavBarIcon'/>
+                    </a>
                 </div>
                 <div className='mailNavBarIconDiv'>
-                    <Image src={linkedin} alt='mail' className='mailNavBarIcon'/>
-                </div>
-                <div className='mailNavBarIconDiv'>
+                    <a href="https://github.com/padhs">
                     <Image src={github} alt='mail' className='mailNavBarIcon'/>
+                    </a>
                 </div>
                 <div className='mailNavBarIconDiv'>
-                    <Image src={substack} alt='mail' className='mailNavBarIcon'/>
+                    <a href="https://padhs.substack.com">
+                        <Image src={subStackFooter} alt='mail' className='mailNavBarIcon'/>
+                    </a>
                 </div>
             </div>
         </div>
         <div className='mainPage'>
             <div className='mainContent'>
-                <div className='heyIntro'>
+            <div className='heyIntro'>
                     <strong>
                         Hey, I am Arosek Padhi.
                     </strong>
                 </div>
                 <div className='productTeardown'>
                     <strong>
-                        I am a product manager and I create Product Case Studies and Teardowns.
+                        I am a product manager, I do Product Case Studies and Teardowns.
                     </strong>
                 </div>
                 <div className='subProductTeardown'>
@@ -77,11 +91,13 @@ export default function Home() {
                     </strong>
                 </div>
                 <div className='contactMeButtonMainPage'>
-                    <Button
-                        className='contactMeButton'
-                        variant='contained'>
-                        <strong>contact me</strong>
-                    </Button>
+                    <Tooltip title='🇮🇳 9439698531' arrow>
+                        <Button
+                            className='contactMeButton'
+                            variant='contained'>
+                            <strong>contact me</strong>
+                        </Button>
+                    </Tooltip>
                 </div>
             </div>
             <div className='headerImageContainer'>
@@ -147,6 +163,7 @@ export default function Home() {
         <div className='aboutMeSection'>
             <div className='aboutmePicContainer'>
                 <Image
+                    className='aboutmePic'
                     src={AboutMe}
                     alt='aboutmePic'
                 />
@@ -168,7 +185,7 @@ export default function Home() {
                     <strong>Arosek Padhi</strong>
                 </div>
                 <div className='productManager'>
-                    Aspiring Product Manager
+                    Product Manager
                 </div>
             </div>
             <div className='footerContent'>
@@ -191,7 +208,7 @@ export default function Home() {
                         </a>
                     </div>
                     <div className='footerIconForConnecting'>
-                        <a href="https://mailto:arosekpadhi@gmail.com">
+                        <a href="mailto:arosekpadhi@gmail.com?subject=Arosek%2C I want to Connect">
                             <Image
                                 className='linkedInIconFooter'
                                 src={gmail}
@@ -200,7 +217,7 @@ export default function Home() {
                         </a>
                     </div>
                     <div className='footerIconForConnecting'>
-                        <a href="https://linkedin.com/in/arosekp">
+                        <a href="https://padhs.substack.com">
                             <Image
                                 className='linkedInIconFooter'
                                 src={subStackFooter}
@@ -209,7 +226,7 @@ export default function Home() {
                         </a>
                     </div>
                     <div className='footerIconForConnecting'>
-                        <a href="https://linkedin.com/in/arosekp">
+                        <a href="https://github.com/padhs">
                             <Image
                                 className='linkedInIconFooter'
                                 src={github}

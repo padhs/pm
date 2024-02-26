@@ -5,15 +5,13 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .emojiIcon{
     font-size: xx-large;
     margin: 10px;
-    align-items: flex-start;
-
 }
 
 .menuActionButtons{
@@ -25,10 +23,22 @@
 }
 
 .menuButton{
+    font-size: xx-large;
     padding: 5px;
     margin: 10px;
-    background-color: #DDDDDD;
+    color: #03367f;
     border-radius: 10px;
+}
+
+.contactOnHover{
+    display: none;
+}
+
+.contactNumber:hover .contactOnHover{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #0f1221;
 }
 
 .socialNavBarIcons{
@@ -52,6 +62,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f5fcff;
+    object-fit: contain;
 }
 
 .heyIntro{
@@ -85,6 +96,16 @@
     font-size: 20px;
     width: 250px;
     height: 80px;
+}
+
+.headerImageContainer{
+    object-fit: contain;
+}
+
+.headerImage{
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .mainContent{
@@ -136,6 +157,16 @@
     color: black;
 }
 
+.aboutmePicContainer{
+    object-fit: contain;
+}
+
+.aboutmePic{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
 .aboutMeHeading{
     font-size: 100px;
     margin: 20px;
@@ -150,7 +181,7 @@
     background-color: #0f1221;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     object-fit: contain;
     padding: 20px;
 }
@@ -158,7 +189,7 @@
 .nameandPM{
     display: flex;
     flex-direction: column;
-
+    margin: 20px;
 }
 
 .footerName{
@@ -172,7 +203,7 @@
 }
 
 .footerContent{
-
+    margin: 20px;
 }
 
 .footerTalkInfo{
