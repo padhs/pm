@@ -122,7 +122,7 @@ export default function Home() {
                     </div>
                     <div className='seeMyCode'>
                         <strong>
-                            Head down to the place where I have done all my product teardowns and case studies of different products. <br/>I assure you, it will be amazing.
+                            Head down to the place where I have done all my product teardowns and case studies of different products. I assure you, <>{'it\'ll'}</> be amazing.
                         </strong>
                     </div>
                 </div>
@@ -175,7 +175,8 @@ export default function Home() {
                     </strong>
                 </div>
                 <div className='aboutMeSubInfo'>
-                    This is the information about me and this is how you are going to know about me, my works and all things related. 🚀
+                    This is the information about me and this is how you are going to know about me, my works and all things related.
+                    <br/> <>{'Let\'s'}</> goooo! 🚀
                 </div>
             </div>
         </div>
@@ -191,7 +192,7 @@ export default function Home() {
             <div className='footerContent'>
                 <div className='talk'>
                     <strong>
-                        Lets Talk!
+                        <>{'Let\'s'}</> Talk!
                     </strong>
                 </div>
                 <div className='footerTalkInfo'>
